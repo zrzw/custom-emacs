@@ -3,7 +3,7 @@
 ;;; clone to ~.emacs.d/custom-emacs and add the following to ~/.emacs/init.el:
 ;;;     (add-to-list 'load-path "~/.emacs.d/custom-emacs")
 ;;;     (require 'custom-emacs)
-;;; last updated: 28/9/18
+;;; Updated: 28/9/18
 
 ;;; Code:
 (require 'package)
