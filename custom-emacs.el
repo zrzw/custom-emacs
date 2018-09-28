@@ -19,15 +19,16 @@
 (add-to-list 'default-frame-alist
              '(font . "Inconsolata-12")) ;;fonts.google.com/specimen/Inconsolata
 (when window-system
-  (set-frame-size (selected-frame) 89 33))
+  (set-frame-size (selected-frame) 80 40))
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (toggle-scroll-bar -1)
 (setq inhibit-startup-message t)
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
-(global-linum-mode t)
+;;(global-linum-mode t)
 (fset 'yes-or-no-p 'y-or-n-p)
+(global-set-key (kbd "<f12>") 'enlarge-window) ;;to reduce down 'pop up' windows
 
 ;; Run make in the current or parent directory
 (global-set-key (kbd "<f3>")
