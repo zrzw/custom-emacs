@@ -3,7 +3,7 @@
 ;;; clone to ~.emacs.d/custom-emacs and add the following to ~/.emacs/init.el:
 ;;;     (add-to-list 'load-path "~/.emacs.d/custom-emacs")
 ;;;     (require 'custom-emacs)
-;;; Updated: 28/9/18
+;;; Updated: 30/9/18
 
 ;;; Code:
 (require 'package)
@@ -20,6 +20,8 @@
              '(font . "Inconsolata-12")) ;;fonts.google.com/specimen/Inconsolata
 (when window-system
   (set-frame-size (selected-frame) 80 40))
+(setq-default next-screen-context-lines 100) ;; make C-v smoother
+(setq-default scroll-step 1) ;; make keyboard scroll smoother
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (toggle-scroll-bar -1)
