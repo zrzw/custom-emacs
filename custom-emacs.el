@@ -19,13 +19,15 @@
 (add-to-list 'default-frame-alist
              '(font . "Inconsolata-12")) ;;fonts.google.com/specimen/Inconsolata
 (when window-system
-  (set-frame-size (selected-frame) 80 40))
-(setq-default next-screen-context-lines 100) ;; make C-v smoother
-(setq-default scroll-step 1) ;; make keyboard scroll smoother
+  (set-frame-size (selected-frame) 80 50))
+(setq-default next-screen-context-lines 100) ;;make C-v smoother
+(setq-default scroll-step 1) ;;make keyboard scroll smoother
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (toggle-scroll-bar -1)
 (setq inhibit-startup-message t)
+(setq make-backup-files nil) ;;no files~ or #files#
+(setq auto-save-default nil)
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
 ;;(global-linum-mode t)
